@@ -50,6 +50,7 @@ group :development do
   # gem "spring"
 end
 
+gem 'fast_jsonapi'
 
 gem "devise", "~> 4.8"
 gem "devise-api", "~> 0.1.1"
