@@ -1,0 +1,2 @@
+class TrainDatesController < ApplicationController
+end
