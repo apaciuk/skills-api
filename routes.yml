@@ -1,0 +1,52 @@
+                                  Prefix Verb   URI Pattern                                                                                       Controller#Action
+                 new_api_v1_user_session GET    /api/v1/users/sign_in(.:format)                                                                   api/v1/sessions#new
+                     api_v1_user_session POST   /api/v1/users/sign_in(.:format)                                                                   api/v1/sessions#create
+             destroy_api_v1_user_session DELETE /api/v1/users/sign_out(.:format)                                                                  api/v1/sessions#destroy
+                new_api_v1_user_password GET    /api/v1/users/password/new(.:format)                                                              api/v1/passwords#new
+               edit_api_v1_user_password GET    /api/v1/users/password/edit(.:format)                                                             api/v1/passwords#edit
+                    api_v1_user_password PATCH  /api/v1/users/password(.:format)                                                                  api/v1/passwords#update
+                                         PUT    /api/v1/users/password(.:format)                                                                  api/v1/passwords#update
+                                         POST   /api/v1/users/password(.:format)                                                                  api/v1/passwords#create
+         cancel_api_v1_user_registration GET    /api/v1/users/cancel(.:format)                                                                    api/v1/registrations#cancel
+            new_api_v1_user_registration GET    /api/v1/users/sign_up(.:format)                                                                   api/v1/registrations#new
+           edit_api_v1_user_registration GET    /api/v1/users/edit(.:format)                                                                      api/v1/registrations#edit
+                api_v1_user_registration PATCH  /api/v1/users(.:format)                                                                           api/v1/registrations#update
+                                         PUT    /api/v1/users(.:format)                                                                           api/v1/registrations#update
+                                         DELETE /api/v1/users(.:format)                                                                           api/v1/registrations#destroy
+                                         POST   /api/v1/users(.:format)                                                                           api/v1/registrations#create
+               revoke_api_v1_user_tokens POST   /api/v1/users/tokens/revoke(.:format)                                                             devise/api/tokens#revoke
+              refresh_api_v1_user_tokens POST   /api/v1/users/tokens/refresh(.:format)                                                            devise/api/tokens#refresh
+              sign_up_api_v1_user_tokens POST   /api/v1/users/tokens/sign_up(.:format)                                                            devise/api/tokens#sign_up
+              sign_in_api_v1_user_tokens POST   /api/v1/users/tokens/sign_in(.:format)                                                            devise/api/tokens#sign_in
+                 info_api_v1_user_tokens GET    /api/v1/users/tokens/info(.:format)                                                               devise/api/tokens#info
+                            api_v1_pages GET    /api/v1/pages(.:format)                                                                           api/v1/pages#index
+                                         POST   /api/v1/pages(.:format)                                                                           api/v1/pages#create
+                             api_v1_page GET    /api/v1/pages/:id(.:format)                                                                       api/v1/pages#show
+                                         PATCH  /api/v1/pages/:id(.:format)                                                                       api/v1/pages#update
+                                         PUT    /api/v1/pages/:id(.:format)                                                                       api/v1/pages#update
+                                         DELETE /api/v1/pages/:id(.:format)                                                                       api/v1/pages#destroy
+                           api_v1_skills GET    /api/v1/skills(.:format)                                                                          api/v1/skills#index
+                                         POST   /api/v1/skills(.:format)                                                                          api/v1/skills#create
+                            api_v1_skill GET    /api/v1/skills/:id(.:format)                                                                      api/v1/skills#show
+                                         PATCH  /api/v1/skills/:id(.:format)                                                                      api/v1/skills#update
+                                         PUT    /api/v1/skills/:id(.:format)                                                                      api/v1/skills#update
+                                         DELETE /api/v1/skills/:id(.:format)                                                                      api/v1/skills#destroy
+                            api_v1_goals GET    /api/v1/goals(.:format)                                                                           api/v1/goals#index
+                                         POST   /api/v1/goals(.:format)                                                                           api/v1/goals#create
+                             api_v1_goal GET    /api/v1/goals/:id(.:format)                                                                       api/v1/goals#show
+                                         PATCH  /api/v1/goals/:id(.:format)                                                                       api/v1/goals#update
+                                         PUT    /api/v1/goals/:id(.:format)                                                                       api/v1/goals#update
+                                         DELETE /api/v1/goals/:id(.:format)                                                                       api/v1/goals#destroy
+                      api_v1_train_dates GET    /api/v1/train_dates(.:format)                                                                     api/v1/train_dates#index
+                                         POST   /api/v1/train_dates(.:format)                                                                     api/v1/train_dates#create
+                       api_v1_train_date GET    /api/v1/train_dates/:id(.:format)                                                                 api/v1/train_dates#show
+                                         PATCH  /api/v1/train_dates/:id(.:format)                                                                 api/v1/train_dates#update
+                                         PUT    /api/v1/train_dates/:id(.:format)                                                                 api/v1/train_dates#update
+                                         DELETE /api/v1/train_dates/:id(.:format)                                                                 api/v1/train_dates#destroy
+                            api_v1_users GET    /api/v1/users(.:format)                                                                           api/v1/users#index
+                                         POST   /api/v1/users(.:format)                                                                           api/v1/users#create
+                             api_v1_user GET    /api/v1/users/:id(.:format)                                                                       api/v1/users#show
+                                         PATCH  /api/v1/users/:id(.:format)                                                                       api/v1/users#update
+                                         PUT    /api/v1/users/:id(.:format)                                                                       api/v1/users#update
+                                         DELETE /api/v1/users/:id(.:format)                                                                       api/v1/users#destroy
+
