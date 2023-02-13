@@ -1,3 +1,5 @@
+module Api
+    module V1
 class GoalsController < ApplicationController
 
     def create 
@@ -52,4 +54,7 @@ class GoalsController < ApplicationController
         params.require(:goals).permit(:name, :timeframe, :exp, :user_id, :goal_id)
     end 
 
+end
+
+end
 end
