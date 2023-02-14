@@ -1,0 +1,3 @@
+class DocumentException < Exception 
+
+end

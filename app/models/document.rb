@@ -13,6 +13,12 @@ end
 
 def word_count
 words.size
+end 
+
+def save
+    raise DocumentException.new(self) unless valid?
+        super
+    end
 end
 
 end

@@ -2,7 +2,12 @@ require 'active_support/all'
 class ApplicationController < ActionController::API
     include ActionController::Cookies
     include ActionController::RequestForgeryProtection
-    # protect_from_forgery with: :exception 
+    rescue_from DocumentException, :with => :handle_document_exception
+    
+    def handle_document_exception(exception)
+        @document = exception.document
+        render :action => 'new'
+    end
 
     private 
 
