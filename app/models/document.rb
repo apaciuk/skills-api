@@ -7,6 +7,13 @@ def initialize(title, author, content)
 @content = content
 end
 
+def title=(title)
+if @writable
+@title = title
+end
+    
+end
+
 def words
 @content.split
 end
@@ -18,7 +25,11 @@ end
 def save
     raise DocumentException.new(self) unless valid?
         super
-    end
+end
+
+def valid?
+    @title != "" && @content != "" && @author != ""
 end
 
 end
+
